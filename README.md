@@ -16,6 +16,9 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
+![image](https://github.com/user-attachments/assets/f90925b1-4ec7-4ec5-920b-604055c6c1cb)
+
+
 **Logic Diagram**
 
 **Procedure**
@@ -33,18 +36,35 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+module boolean (f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor,a,b);
+input a,b;
+output f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor;
+and (f_and,a,b);
+or (f_or,a,b);
+not (f_not,a);
+nor (f_nor,a,b);
+nand (f_nand,a,b);
+xor (f_xor,a,b);
+xnor (f_xnor,a,b);
+endmodule
+```
 
-Developed by: RegisterNumber:*/
+Developed by: KARTHIKEYAN D
 
+RegisterNumber: 24000848
 
-**RTL realization**
-
-**Output:**
 
 **RTL**
 
+![Screenshot 2024-11-22 211513](https://github.com/user-attachments/assets/23d143c3-5d5d-4594-bac7-ead1aee4f2e6)
+
+
+
 **Timing Diagram**
+
+![Screenshot (31)](https://github.com/user-attachments/assets/dec67f31-ce92-49a2-93c5-dac82b102866)
+
 
 **Result:**
 
